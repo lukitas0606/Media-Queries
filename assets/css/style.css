@@ -1,0 +1,101 @@
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  body{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "aside"
+    "main"
+    "footer";
+  }
+  .autos{
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  body{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "aside main"
+    "footer footer";
+  }
+  .footer {
+    font-size: 20rem;
+  }
+  main{
+    width: 78vw;
+  }
+  .autos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  body{
+    display: grid;
+    grid-template-areas: 
+    "nav aside"
+    "nav main"
+    "footer main";
+  }
+  .footer {
+    font-size: 20rem;
+  }
+  nav{
+    width: 15vw;
+  }
+  footer{
+    width: 15vw;
+  }
+  main{
+    width: 85vw;
+  }
+  .autos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+nav{
+  grid-area: nav;
+  background-color: rgb(38, 38, 194);
+  color: white;
+  text-align: center;
+}
+nav li:hover{
+  color: black;
+  cursor:pointer;
+}
+main{
+  grid-area: main;
+}
+aside{
+  grid-area: aside;
+}
+footer{
+  grid-area: footer;
+  background-color: rgb(21, 21, 132);
+  color: white;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.card-body{
+  text-align: center;
+}
+button{
+  margin-top: 10px;
+}
+aside{
+  background-color: rgb(203, 191, 191);
+}
+aside span{
+  text-align: center;
+}
